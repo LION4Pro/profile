@@ -1,0 +1,285 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input {
+    outline: none;
+}
+html {
+    box-sizing: border-box;
+}
+
+a {
+
+    text-decoration: none;
+}
+
+header nav {
+
+    padding: 10px 10rem;
+}
+
+header nav a {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin-left: 2rem;
+    font-size: 1.1rem;
+    color: #ED6A5A;
+    font-weight: 500;
+}
+
+header nav a::before {
+
+    border-bottom: 1px solid red;
+    position: absolute;
+    transition: 2s;
+    content: "" ;
+    bottom: 0;
+    width: 0;
+    left: 0;
+}
+
+header nav a::after {
+
+    border-bottom: 1px solid red;
+    position: absolute;
+    transition: 0.55s;
+    content: "" ;
+    bottom: 0;
+    width: 0;
+    right: 0;
+}
+
+header nav a:hover:before {
+
+   width: 100%;
+}
+
+header nav a:hover:after {
+
+   width: 100%;
+}
+
+.info__wrapper {
+
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+}
+
+.info__image {
+
+    box-shadow: 4px 5px 5px hsla(0, 0%, 0%, 0.3);
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+.info__text {
+
+    line-height: 2rem;
+    padding: 2rem;
+}
+
+.h1 {
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    color: #e2402a;
+}
+
+.fs-20 {
+
+    font-size: 20px;
+}
+
+.active {
+
+    color: black;
+}
+
+.info__link {
+
+    padding: 1rem 0px 0px;
+}
+
+.info__link a {
+
+    background-color: #e2402a;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: white;
+}
+
+.info__link a:hover {
+
+    background-color: #ED6A5A;
+    transition: 0.25s;
+}
+
+main {
+
+    grid-template-columns: 5fr 2fr;
+    background-color: whitesmoke;
+    display: grid;
+}
+
+.content {
+
+    padding: 40px ;
+}
+
+.content__title {
+
+    border-left: 4px solid black;
+    padding-left: 10px;
+    width: fit-content;
+    font-size: 1.4em;
+}
+
+.content__group {
+
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    width: 70%;
+}
+
+.content__image {
+
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+}
+
+.content__text {
+
+    line-height: 1.1rem;
+    margin: 1rem 1rem;
+}
+
+.content__text .h1 {
+
+    background-color: #ED6A5A;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+.content__text p {
+
+    margin: 1.3rem 0px;
+}
+
+.content__avatar {
+
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.content__profile {
+
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+    display: flex;
+    gap: 10px;
+}
+
+aside {
+
+    margin-top: 100px;
+}
+
+aside .skills {
+
+    background-color: white;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+.skills h1 {
+
+    text-align: center;
+    padding: 10px;
+}
+
+.skills__icons {
+
+    font-size: 2rem;
+    padding-top: 10px;
+    text-align: center ;
+}
+
+#html {
+
+    color: red;
+}
+
+#css {
+
+    color: lightskyblue;
+}
+
+#js {
+
+    color: rgba(255, 255, 0, 0.856);
+}
+
+#react {
+
+    color: lightseagreen;
+}
+
+ion-icon:hover {
+
+    color: rgb(235, 235, 0);
+}
